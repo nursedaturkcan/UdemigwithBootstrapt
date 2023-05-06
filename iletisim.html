@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udemig-İletisim</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- !navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+    <!--navbar altına giren içeriklerin görünür olması için fixed-top dan sticky-top a değiştirdim -->
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-1" href="#">
+        <img src="./images/Udemig.png" style="width: 50px;">
+        Udemig
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menü</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <!-- index html e yani ilk sayfaya yönlendirmesi için href kısmına / verildi. -->
+              <a class="nav-link active" aria-current="page" href="/">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/egitimler.html">Eğitimlerimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/iletisim.html">İletişim</a>
+            </li>
+
+          </ul>
+          <!-- butonları tek gruba alma -->
+          <div class="btn-group">
+            <a href="/kaydol.html" class="btn btn-info">Kaydol</a>
+            <a href="/giris.html" class="btn btn-success">Giriş Yap</a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- !navbar end -->
+  <!-- !ANASAYFA START -->
+  <div class="row">
+    <!-- içerik kısmı -->
+    <div class="col-lg-6 col-sm-12 p-5">
+      <h1>Bize Ulaşın</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit quibusdam necessitatibus. Totam
+        rem ipsam nulla molestias veritatis? Deleniti nobis necessitatibus unde facere velit ullam maiores veritatis,
+        voluptatum eum cumque!</p>
+      <img src="images/contact-us.jpg" class="w-100">
+    </div>
+    <!-- form kısmı -->
+    <div class="col-lg-6 col-sm-12 p-5">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Şifre</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Adres</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+       
+       
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Şehir</label>
+          <select id="inputState" class="form-select">
+            <option selected>Şehir Seçiniz</option>
+            <option>Konya</option>
+            <option>İstanbul</option>
+            <option>Ankara</option>
+            <option>Bursa</option>
+            <option>Van</option>
+            <option>İzmir</option>
+            <option>Manisa</option>
+          </select>
+        </div>
+        
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Bilgilerim Doğru
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Kaydol</button>
+        </div>
+      </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7277.998264064884!2d32.495190424123734!3d37.86761580089715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1683372580392!5m2!1str!2str"class="w-100 my-5" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <!-- !ANASAYFA END -->
+
+
+    <!-- !footer strat -->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row d-flex flex-column align-items-center justify-content-center">
+          
+  
+          <div class="col-6 col-md-2 mb-3  w-100">
+            
+            <ul class="nav d-flex w-100 justify-content-between">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Anasayfa</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Eğitimlerimiz</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">İletişim</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kaydolma</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+            </ul>
+          </div>
+          <hr>
+  
+          <div class="col-md-5 offset-md-1 mb-3 text-center">
+            <form>
+              <h5> Abone Ol</h5>
+              <p>Gelişmeleri mail olarak gönderelim!</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Abone Ol</button>
+              </div>
+            </form>
+          </div>
+        </div>
+  
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+          <ul class="d-flex gap-5">
+            <li class="list-unstyled"><a href=""><i class="bi bi-twitter"></i></a></li>
+            <li  class="list-unstyled"><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li  class="list-unstyled"><a href=""><i class="bi bi-instagram"></i></a></li>
+          </ul>
+          
+        </div>
+      </footer>
+    </div>
+    <!-- !footer end -->
+
+
+
+
+
+
+
+  <!-- bootstrapt script kütüphanesi eklenmesi -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+    integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udemig</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="/images/udemig.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <!-- kartların hover efektinin düzenlenmesi -->
+  <style>
+    .card {
+      transition: all .3s;
+    }
+
+    .card:hover {
+      transform: translate(10px, -10px);
+      /*ilk değer y ekseni ikinci değer ise x eksinindeki harekettir!*/
+      transition: all .4s;
+      box-shadow: 2px 2px 20px blue;
+      /*2 px aşağıda 2px sağda 20px bulanıklığında siyah bir gölge */
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- !navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+    <!--navbar altına giren içeriklerin görünür olması için fixed-top dan sticky-top a değiştirdim -->
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-1" href="#">
+        <img src="./images/Udemig.png" style="width: 50px;">
+        Udemig
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menü</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <!-- index html e yani ilk sayfaya yönlendirmesi için href kısmına / verildi. -->
+              <a class="nav-link active" aria-current="page" href="/">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/egitimler.html">Eğitimlerimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/iletisim.html">İletişim</a>
+            </li>
+
+          </ul>
+          <!-- butonları tek gruba alma -->
+          <div class="btn-group">
+            <a href="/kaydol.html" class="btn btn-info">Kaydol</a>
+            <a href="/giris.html" class="btn btn-success">Giriş Yap</a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- !navbar end -->
+  <!-- !homepage contain start -->
+  <!-- !hero alanı -->
+
+
+  <div class="container my-5">
+    <div class="row border p-3 rounded shadow">
+      <!-- yazının olduğu kısım sol taraf -->
+      <div class="col-lg-6  col-sm-12 d-flex flex-column justify-content-center ">
+        <!--ekran large ise 6 birimlik alan kaplasin small ise 12 birimlik alan kaplayı alt alta gelsin mediumda ise 8e 4 paylaşılsın ekran-->
+        <h1>Yazılım Öğrenmek İstiyorsanız Doğru Yerdesiniz</h1>
+        <p>Teknolojiye adım atmaya hazır mısınız? Yazılım eğitim kampımız, sizi yazılım dünyasında başarılı olmanız için
+          ihtiyaç duyduğunuz bilgi ve becerilerle donatmak için tasarlanmıştır. Eğitmenlerimiz, öğrenme yolculuğunuzun
+          her adımında size rehberlik edecek ve size bir kodlama uzmanı olmanız için gereken güveni ve araçları
+          verecektir!</p>
+
+
+      </div>
+      <!-- resmin olduğu kısım sağ taraf. iki eşit parçaya bölmek için 6 verdik -->
+      <div class="col-lg-6  col-sm-12 d-flex align-items-center justify-content-center">
+        <img src="./images/banner.png" class="w-100 img-fluid">
+      </div>
+    </div>
+
+    <!--! Cards -->
+    <div class="d-flex gap-5 flex-wrap justify-content-center mt-5">
+      <!-- 1.card -->
+      <div class="card " style="width: 18rem;">
+        <div class="card-head d-flex align-items-center justify-content-center " style="height: 290px;">
+          <img src="./images/front-end.jpg" class="w-100 object-fit-cover">
+
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h3 class="card-title text-center border-bottom pb-3">Front End</h3>
+          <p class="card-text">Frontend eğitimi bootcampi, web tasarımı ve geliştirme becerilerini geliştirmek için
+            profesyonel bir programdır. HTML, CSS, JavaScript ve diğer teknolojiler öğrenilir.</p>
+          <a class="btn btn-primary">Detaylı Bilgi</a>
+        </div>
+      </div>
+      <!-- 2.card -->
+      <div class="card" style="width: 18rem;">
+        <div class="card-head d-flex align-items-center justify-content-center " style="height: 290px;">
+          <img src="./images/quality.jpg" class="w-100">
+
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h3 class="card-title text-center border-bottom pb-3 ">Quality Assuarance</h3>
+          <p class="card-text">Mükemmeliyetçi yazılım test etme becerileri kazandırmak için profesyonel bir programdır.
+            Test metodları, en iyi uygulamalar ve araçlar öğrenilir.</p>
+          <a class="btn btn-primary">Detaylı Bilgi</a>
+        </div>
+      </div>
+      <!-- 3.card -->
+      <div class="card" style="width: 18rem;">
+        <div class="card-head d-flex align-items-center justify-content-center " style="height: 290px;">
+          <img src="./images/react-native.jpg" class="w-100">
+
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h3 class="card-title text-center border-bottom pb-3">React Native</h3>
+          <p class="card-text">Mükemmeliyetçi yazılım test etme becerileri kazandırmak için profesyonel bir programdır.
+            Test metodları, en iyi uygulamalar ve araçlar öğrenilir.</p>
+          <a class="btn btn-primary">Detaylı Bilgi</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- !amaç kısmı başlangıç -->
+    <div class="container bg-black p-5 mt-5">
+      <h1 class="title text-white text-center mb-5">NEYİ AMAÇLIYORUZ</h1>
+      <div class="d-flex  align-items-center gap-2 justify-content-center flex-wrap">
+        <!-- 1.info kartı -->
+        <div class="card bg-secondary border-white p-4 mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center text-warning">Gerçeğe Dayalı</h5>
+
+            <p class="card-text text-center text-white">Öğrencilere gerçek dünya uygulamalarında kullanabilecekleri
+              beceriler kazandırmaktır. Örneğin, öğrenciler web siteleri ve uygulamalar yazabilecek, veri analizi
+              yapabilecek, veritabanları yönetebilecek veya mobil uygulamalar oluşturabilecektir.</p>
+
+          </div>
+        </div>
+
+        <!-- 2.info kartı -->
+        <div class="card bg-secondary border-white p-4 mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center text-warning">Temel Beceriler</h5>
+
+            <p class="card-text text-center text-white">Öğrencilere gerçek dünya uygulamalarında kullanabilecekleri
+              beceriler kazandırmaktır. Örneğin, öğrenciler web siteleri ve uygulamalar yazabilecek, veri analizi
+              yapabilecek, veritabanları yönetebilecek veya mobil uygulamalar oluşturabilecektir.</p>
+
+          </div>
+        </div>
+
+ <!-- 3.info kartı -->
+        <div class="card bg-secondary border-white p-4 mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center text-warning">İş Hayatına Yönelik</h5>
+
+            <p class="card-text text-center text-white">Öğrencilere gerçek dünya uygulamalarında kullanabilecekleri
+              beceriler kazandırmaktır. Örneğin, öğrenciler web siteleri ve uygulamalar yazabilecek, veri analizi
+              yapabilecek, veritabanları yönetebilecek veya mobil uygulamalar oluşturabilecektir.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <!-- !amaç kısmı bitiş -->
+
+
+
+  </div>
+  <!-- !homepage contain end -->
+
+
+  <!-- !footer strat -->
+  <div class="container">
+    <footer class="py-5">
+      <div class="row d-flex flex-column align-items-center justify-content-center">
+        
+
+        <div class="col-6 col-md-2 mb-3  w-100">
+          
+          <ul class="nav d-flex w-100 justify-content-between">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Anasayfa</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Eğitimlerimiz</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">İletişim</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kaydolma</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+          </ul>
+        </div>
+        <hr>
+
+        <div class="col-md-5 offset-md-1 mb-3 text-center">
+          <form>
+            <h5> Abone Ol</h5>
+            <p>Gelişmeleri mail olarak gönderelim!</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Abone Ol</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+        <ul class="d-flex gap-5">
+          <li class="list-unstyled"><a href=""><i class="bi bi-twitter"></i></a></li>
+          <li  class="list-unstyled"><a href=""><i class="bi bi-facebook"></i></a></li>
+          <li  class="list-unstyled"><a href=""><i class="bi bi-instagram"></i></a></li>
+        </ul>
+        
+      </div>
+    </footer>
+  </div>
+  <!-- !footer end -->
+
+
+
+
+
+
+
+  <!-- bootstrapt script kütüphanesi eklenmesi -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+    integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
